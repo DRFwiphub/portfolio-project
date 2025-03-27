@@ -1,1 +1,2 @@
 # portfolio-project
+portfolio page for web design project made using flexbox model, nested flexboes. its a website using HTML & CSS. addition resources w3schools, code acdemmy, stack overflow. no idea
