@@ -25,29 +25,53 @@
                 </p>
                 <div class="green">
                     <div class="flex-container">
-                        <div><img src="./images/placeholder.jpg" alt="box 1" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 2" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 3" id="myImg"></div>
+                        <div class="full-img" id="fullimgbox">
+                            <img src="./images/placeholder.jpg" id="fullimg">
+                            <span onclick="closeFullImg()">X</span>
+                        </div>
+                        <div><img src="./images/placeholder.jpg" onclick="openFullImg(this.src)" alt="box 1" id="myImg"></div>
+                        <div><img src="./images/placeholder.jpg" onclick="openFullImg(this.src)" alt="box 2" id="myImg"></div>
+                        <div><img src="./images/placeholder.jpg" onclick="openFullImg(this.src)" alt="box 3" id="myImg"></div>
                         <div><img src="./images/placeholder.jpg" alt="box 4" id="myImg"></div>
                         <div><img src="./images/placeholder.jpg" alt="box 5" id="myImg"></div>
                         <div><img src="./images/placeholder.jpg" alt="box 6" id="myImg"></div>
                         <div><img src="./images/placeholder.jpg" alt="box 7" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 8" id="myImg"></div>
+                        <div><img src="./images/placeholder.jpg" onclick="openFullImg(this.src)" alt="box 8" id="myImg"></div>
                         <div><img src="./images/placeholder.jpg" alt="box 9" id="myImg"></div>
                         <div><img src="./images/placeholder.jpg" alt="box 10" id="myImg"></div>
                     </div>
                 </div>
             </div>
+            <div class="yellow">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">gallery</a>
+                    <a href="about.html">about me</a>
+                    <a href="contact.html">contact</a>
+                </nav>
+            </div>
         </div>
-        <div class="yellow">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="gallery.html">gallery</a>
-                <a href="about.html">about me</a>
-                <a href="contact.html">contact</a>
-            </nav>
+        <!-- The Modal 
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
         </div>
-        </div>
-        <script src="main.js"></script>
+        <script src="script.js"></script>-->
+        <script>
+            var fullImgBox = document.getElementById("fullimgbox");
+            var fullImg = document.getElementById("fullimg");
+
+            function openFullImg(pic){
+                fullImgBox.style.display = "flex";
+                fullImg.src = pic;
+            }
+
+            function closeFullImg(){
+                fullImgBox.style.display ="none";
+
+            }
+
+        </script>
     </body>
 </html>
