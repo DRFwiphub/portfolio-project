@@ -1,41 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
     <link rel="stylesheet" href="style1.css">
+  <title>Popup Gallery Demo</title>
 </head>
-    <title>home</title>
-    <body>
-<div class="full-img" id="fullimgbox">
-    <img src="./images/placeholder.jpg" id="fullimg">
-    <span onclick="closeFullImg()">X</span>
-</div>
-<div><img src="./images/placeholder.jpg" onclick="openFullImg(this.src)" alt="box 1" id="myImg"></div>
-<div><img src="./images/placeholder.jpg" onclick="openFullImg(this.src)" alt="box 2" id="myImg"></div>
-<div><img src="./images/placeholder.jpg" onclick="openFullImg(this.src)" alt="box 3" id="myImg"></div>
-<div><img src="./images/placeholder.jpg" alt="box 4" id="myImg"></div>
-<div><img src="./images/placeholder.jpg" alt="box 5" id="myImg"></div>
-<div><img src="./images/placeholder.jpg" alt="box 6" id="myImg"></div>
-<div><img src="./images/placeholder.jpg" alt="box 7" id="myImg"></div>
-<div><img src="./images/placeholder.jpg" onclick="openFullImg(this.src)" alt="box 8" id="myImg"></div>
-<div><img src="./images/placeholder.jpg" alt="box 9" id="myImg"></div>
-<div><img src="./images/placeholder.jpg" alt="box 10" id="myImg"></div>
-</div>
-<script>
-    var fullImgBox = document.getElementById("fullimgbox");
-    var fullImg = document.getElementById("fullimg");
+<body>
+    <title>gallery</title>
+   <body>
+      <div class="container">
+         <div class="blue">
+            <h1>my page</h1>
+         </div>
+         <div class="yellow">
+            <nav>
+               <a href="index.html">Home</a>
+               <a href="gallery.html">gallery</a>
+               <a href="about.html">about me</a>
+               <a href="contact.html">contact</a>
+            </nav>
+         </div>
+         <div class="red">
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, ipsum vel aliquam ultricies, justo lectus malesuada elit, eget fermentum eros enim et leo. Pellentesque volutpat id augue vitae finibus. Nulla eleifend ante libero, ac convallis justo consectetur ut. Pellentesque eget ligula sit amet dui congue dapibus. Morbi cursus feugiat turpis, a eleifend quam interdum eu. Phasellus sit amet justo commodo, ornare lorem eu, semper turpis. Donec a urna dapibus, euismod est in, finibus ante. Duis sed viverra orci, tristique porttitor urna. Fusce urna eros, vestibulum sit amet tortor eu, finibus faucibus nisl. Mauris in odio non enim blandit commodo. Vivamus et metus nisl. Mauris pharetra est accumsan massa suscipit mollis. Maecenas egestas pretium orci in feugiat. Nullam rutrum augue sed quam varius, quis consectetur augue ultrices. Vestibulum venenatis risus in ullamcorper cursus. Aliquam dictum metus eget pretium tempor.
+            </p>
+            <div class="green">
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/300/200" alt="Image 1">
+    <img src="https://picsum.photos/id/1016/300/200" alt="Image 2">
+    <img src="https://picsum.photos/id/1018/300/200" alt="Image 3">
+  </div>
 
-    function openFullImg(pic){
-        fullImgBox.style.display = "flex";
-        fullImg.src = pic;
-    }
-
-    function closeFullImg(){
-        fullImgBox.style.display ="none";
-
-    }
-
-</script>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <img id="modalImage" src="" alt="Enlarged Image">
+    </div>
+  </div>
+  
+            </div>
+         </div>
+         <div class="yellow">
+            <nav>
+               <a href="index.html">Home</a>
+               <a href="gallery.html">gallery</a>
+               <a href="about.html">about me</a>
+               <a href="contact.html">contact</a>
+            </nav>
+         </div>
+      </div>
+  <script src ="script.js"></script>
 </body>
 </html>
