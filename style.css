@@ -1,6 +1,19 @@
 body {
       font-family: Arial, sans-serif;
 }
+p {
+    line-height: 1 rem;
+    font-size: 4 rem;
+}
+  aside > p {
+    margin: 0.5rem;
+    text-align: right;
+  }
+
+h1 {
+    line-height: 3 rem;
+    font-size: 8 rem;
+}
 .container {
     background-color: transparent;
     height: 100%;
@@ -9,32 +22,12 @@ body {
     align-items: center;
     text-align: center;
 }
-
 .blue {
     background-color: beige;
     height: 20%;
     width: 80%;
     border: solid black;
 }
-
-.green {
-    background-color: transparent;
-    display: flex;
-    height: 80%;
-    width: 80%;
-}
-
-
-
-.red {
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    height: 64%;
-    width: 80%;
-    border: solid black;
-}
-
 .yellow {
     background-color: beige;
     height: 8%;
@@ -43,6 +36,14 @@ body {
 }
 .yellow > p{
     align-items: center;
+}
+.red {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    height: 64%;
+    width: 80%;
+    border: solid black;
 }
 aside {
     width: 40%;
@@ -54,23 +55,33 @@ aside {
     color: #29627e;
     align-items: left;
   }
-  
-  aside > p {
-    margin: 0.5rem;
-    text-align: right;
-  }
- 
 
-p {
-    line-height: 1 rem;
-    font-size: 4 rem;
+ .purple{
+    background-color: transparent;
+    position: center;
+ }
+.magenta{
+  display: flex;
+  position: center;
+  padding: 10%;
+  margin: 5% 10%;
+  border: solid #fff;
 }
-
-h1 {
-    line-height: 3 rem;
-    font-size: 8 rem;
+.magenta > div{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
 }
-
+.magenta > button{
+  height: 15px;
+  width: auto;
+}
+.green {
+    background-color: transparent;
+    display: flex;
+    height: 80%;
+    width: 80%;
+}  
 .gallery {
     display: flex;
     gap: 12px;
@@ -137,17 +148,11 @@ h1 {
     color: #f55;
   }
 
-
-
-
-
 @media only screen and (orientation: landscape) {
     body {
         background-color: lightblue;
     }
 }
-
-
 
 @media screen and (min-width: 320px) {
     body {
