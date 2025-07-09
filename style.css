@@ -1,15 +1,10 @@
 body {
-      font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 p {
     line-height: 1 rem;
     font-size: 4 rem;
 }
-  aside > p {
-    margin: 0.5rem;
-    text-align: right;
-  }
-
 h1 {
     line-height: 3 rem;
     font-size: 8 rem;
@@ -45,36 +40,35 @@ h1 {
     width: 80%;
     border: solid black;
 }
-aside {
-    width: 40%;
-    padding-left: 0.5rem;
-    margin-left: 0.5rem;
-    float: left;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
-    align-items: left;
-  }
-
- .purple{
+.purple{
     background-color: transparent;
     position: center;
- }
+}
 .magenta{
-  display: flex;
-  position: center;
-  padding: 10%;
-  margin: 5% 10%;
-  border: solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    position: center;
+    padding: 10%;
+    margin: 5% 10%;
+    border: solid #fff;
+    justify-content: center;
 }
-.magenta > div{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
+form > button{
+    height: 15px;
+    width: auto;
 }
-.magenta > button{
-  height: 15px;
-  width: auto;
+label{
+    text-align: top;
+    margin:5px;
+}
+input{
+    min-width: 150px;
+    /*padding-left: 5px;*/
+    margin-bottom: 5px;
+}
+textarea{
+    min-width: 150px;
+    min-height: 100px;
 }
 .green {
     background-color: transparent;
@@ -84,6 +78,7 @@ aside {
 }  
 .gallery {
     display: flex;
+    /*flex-wrap: wrap;*/
     gap: 12px;
     margin: 30px;
 }
@@ -109,11 +104,11 @@ aside {
     align-items: center;
     justify-content: center;
     transition: opacity 0.2s;
-  }
-  .modal.open {
+}
+.modal.open {
     display: flex;
-  }
-  .modal-content {
+}
+.modal-content {
     max-width: 80vw;
     max-height: 80vh;
     border-radius: 8px;
@@ -124,13 +119,13 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .modal-content img {
+}
+.modal-content img {
     max-width: 100%;
     max-height: 70vh;
     border-radius: 8px;
-  }
-  .close-btn {
+}
+.close-btn {
     position: absolute;
     top: 12px;
     right: 18px;
@@ -143,10 +138,10 @@ aside {
     font-weight: bold;
     text-shadow: 0 1px 6px #000;
     transition: color 0.15s;
-  }
+}
   .close-btn:hover {
     color: #f55;
-  }
+}
 
 @media only screen and (orientation: landscape) {
     body {
@@ -158,19 +153,19 @@ aside {
     body {
       background-color: green;
     }
+}
+@media screen and (min-width: 550px) {
+  body {
+    background-color: yellow;
   }
-  @media screen and (min-width: 550px) {
-    body {
-      background-color: yellow;
-    }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: orange;
   }
-  @media screen and (min-width: 768px) {
-    body {
-      background-color: orange;
-    }
+}
+@media screen and (min-width: 960px) {
+  body {
+    background-color: red;
   }
-  @media screen and (min-width: 960px) {
-    body {
-      background-color: red;
-    }
-  }
+}
