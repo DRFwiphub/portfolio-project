@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-</head>
-    <title>gallery</title>
-    <body>
-        <div class="container">
-            <div class="blue">
-                <h1>my page</h1>
-            </div>
-            <div class="yellow">
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="gallery.html">gallery</a>
-                    <a href="about.html">about me</a>
-                    <a href="contact.html">contact</a>
-                </nav>
-            </div>
-            <div class="red">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, ipsum vel aliquam ultricies, justo lectus malesuada elit, eget fermentum eros enim et leo. Pellentesque volutpat id augue vitae finibus. Nulla eleifend ante libero, ac convallis justo consectetur ut. Pellentesque eget ligula sit amet dui congue dapibus. Morbi cursus feugiat turpis, a eleifend quam interdum eu. Phasellus sit amet justo commodo, ornare lorem eu, semper turpis. Donec a urna dapibus, euismod est in, finibus ante. Duis sed viverra orci, tristique porttitor urna. Fusce urna eros, vestibulum sit amet tortor eu, finibus faucibus nisl. Mauris in odio non enim blandit commodo. Vivamus et metus nisl. Mauris pharetra est accumsan massa suscipit mollis. Maecenas egestas pretium orci in feugiat. Nullam rutrum augue sed quam varius, quis consectetur augue ultrices. Vestibulum venenatis risus in ullamcorper cursus. Aliquam dictum metus eget pretium tempor.
-                </p>
-                <div class="green">
-                    <div class="flex-container">
-                        <div><img src="./images/placeholder.jpg" alt="box 1" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 2" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 3" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 4" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 5" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 6" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 7" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 8" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 9" id="myImg"></div>
-                        <div><img src="./images/placeholder.jpg" alt="box 10" id="myImg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="yellow">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <title>Gallery</title>
+   <body>
+      <div class="container">
+         <div class="blue">
+            <h1>my page</h1>
+         </div>
+         <div class="yellow">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="gallery.html">gallery</a>
-                <a href="about.html">about me</a>
-                <a href="contact.html">contact</a>
+               <a href="index.html">Home</a>
+               <a href="gallery.html">gallery</a>
+               <a href="about.html">about me</a>
+               <a href="contact.html">contact</a>
             </nav>
-        </div>
-        </div>
-        <script src="main.js"></script>
-    </body>
+         </div>
+         <div class="red">
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit, ipsum vel aliquam ultricies, justo lectus malesuada elit, eget fermentum eros enim et leo. Pellentesque volutpat id augue vitae finibus. Nulla eleifend ante libero, ac convallis justo consectetur ut. Pellentesque eget ligula sit amet dui congue dapibus. Morbi cursus feugiat turpis, a eleifend quam interdum eu. Phasellus sit amet justo commodo, ornare lorem eu, semper turpis. Donec a urna dapibus, euismod est in, finibus ante. Duis sed viverra orci, tristique porttitor urna. Fusce urna eros, vestibulum sit amet tortor eu, finibus faucibus nisl. Mauris in odio non enim blandit commodo. Vivamus et metus nisl. Mauris pharetra est accumsan massa suscipit mollis. Maecenas egestas pretium orci in feugiat. Nullam rutrum augue sed quam varius, quis consectetur augue ultrices. Vestibulum venenatis risus in ullamcorper cursus. Aliquam dictum metus eget pretium tempor.
+            </p>
+            <br>
+            <p>
+               Fusce tempor nulla interdum dolor iaculis eleifend. Suspendisse porttitor, diam vel faucibus molestie, mi dui pharetra urna, et volutpat ligula diam vel velit. Integer eu libero rhoncus, dictum est ac, fermentum arcu. Ut vitae magna nec lacus consectetur pulvinar. Integer tempus efficitur odio, ac elementum lectus luctus id. Cras diam massa, sagittis at vulputate ac, facilisis porta elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius, orci vel tempus porttitor, dui lorem ultrices turpis, convallis eleifend nibh dui et dolor. Ut a sodales mi. Vivamus fringilla est vitae ipsum hendrerit tempor et vitae sapien. Duis et pretium magna. Donec molestie mollis velit quis scelerisque. Nam consectetur dolor maximus dictum maximus.
+            </p>
+            <div class="green">
+               <div class="gallery">
+                  <img src="images/designer.jpg" alt="first">
+                  <img src="images/developer.jpg" alt="second">
+                  <img src="images/editor.jpg" alt="third">
+                  <img src="images/gamer.jpg" alt="fourth">
+                  <img src="images/marketer.jpg" alt="fifth">
+               </div>
+               <div class="modal" id="modal">
+                  <div class="modal-content">
+                     <button class="close-btn" id="closeBtn">&times;</button>
+                     <img id="modalImage" src="" alt="Enlarged Image">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="yellow">
+            <nav>
+               <a href="index.html">Home</a>
+               <a href="gallery.html">gallery</a>
+               <a href="about.html">about me</a>
+               <a href="contact.html">contact</a>
+            </nav>
+         </div>
+      </div>
+      <script src ="script.js"></script>
+   </body>
 </html>
