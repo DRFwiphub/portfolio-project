@@ -24,7 +24,7 @@
     });
 
 
-/*
+
     (function(){
         emailjs.init("ex0WU-sCy44tYoz1N");
     })();
@@ -38,16 +38,16 @@
             }, function(error) {
                 alert('Failed to send: ' + JSON.stringify(error));
             });
-    });*/
+    });
 
-            (function() {
+    /*          (function() {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
               publicKey: "ex0WU-sCy44tYoz1N",
             });
         })();
  
-        window.onload = function() {
+      window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // these IDs from the previous steps
@@ -58,4 +58,4 @@
                         console.log('FAILED...', error);
                     });
             });
-        }
+        }*/
