@@ -27,23 +27,31 @@
             <p>
                Fusce tempor nulla interdum dolor iaculis eleifend. Suspendisse porttitor, diam vel faucibus molestie, mi dui pharetra urna, et volutpat ligula diam vel velit. Integer eu libero rhoncus, dictum est ac, fermentum arcu. Ut vitae magna nec lacus consectetur pulvinar. Integer tempus efficitur odio, ac elementum lectus luctus id. Cras diam massa, sagittis at vulputate ac, facilisis porta elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius, orci vel tempus porttitor, dui lorem ultrices turpis, convallis eleifend nibh dui et dolor. Ut a sodales mi. Vivamus fringilla est vitae ipsum hendrerit tempor et vitae sapien. Duis et pretium magna. Donec molestie mollis velit quis scelerisque. Nam consectetur dolor maximus dictum maximus.
             </p>
+            <!--links with images-->
+            <a href=>twitter/x</a>
+            <a href=>instagram</a>
+            <a href=>linkedin</a>
             <div class="purple">
                <div class="magenta">
                   <form id="contact-form">
-                     <input type="hidden" name="time" value="Mar 10 2025 08:46">
-                     <label>Name</label>
-                     <input type="text" name="name" required autocomplete="off">
-                     <br>
-                     <label>Email</label>
-                     <input type="email" name="email" required autocomplete="off">
-                     <br>
-                     <label>Subject</label>
-                     <input type="text" name="title" required autocomplete="off">
-                     <br>
-                     <label>Message</label>
-                     <textarea name="message" required></textarea>
-                     <br>
-                     <input type="submit" value="Send">
+                     <div>
+                        <label for="name">name</label>
+                        <input type="text" name="name" autocomplete="off" id="name">
+                     </div>
+                     <div>
+                        <label for="email">email</label>
+                        <input type="text" name="email" autocomplete="off" id="email">
+                     </div>
+                     <div style="display: none; visibility: hidden;">
+                        <input type="text" name="job-role" autocomplete="off">
+                     </div>
+                     <div>
+                        <label for="message">message</label>
+                        <textarea id="message" name="message"></textarea>
+                     </div>
+                     <div>
+                        <button type="submit">Submit</button>
+                     </div>
                   </form>
                </div>
             </div>
