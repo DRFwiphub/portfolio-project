@@ -8,6 +8,9 @@ body {
 h1 {
     font-size: 4 rem;
 }
+p{
+  padding: 0 5px;
+}
 .container {
     background-color: transparent;
     height: 100vh;
@@ -17,16 +20,59 @@ h1 {
     text-align: center;
 }
 .blue {
-    background-color: beige;
+    background-color: blue;
+}
+.blue img{
+  max-width: 360px;
 }
 .yellow {
-    background-color: beige;
     border-top: solid black;
     border-bottom: solid black;
+    background-color: #E35AE8;
 }
-
+nav{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #5829F0;
+}
+.nav-links{
+  display: flex;
+align-items: center;
+list-style: none;
+}
+.nav-links a{
+  display: block;
+padding:  10px;
+color: #111;
+text-decoration: none;
+font-size: 10px;
+text-transform: uppercase;
+transition: all ease-in-out 100ms;
+}
+.nav-links a:hover{
+  background-color: #39ffde;
+}
+.nav-links .nav-cta-button{
+  padding:  10px;
+  margin-left: 16px;
+  border: #39ffde solid 2px;
+  border-radius: 15px;
+}
+.nav-links .nav-cta-button:hover{
+  background-color: #39ffde;
+}
+.bacon .bar{
+  flex-basis: 100%;
+  height: 4px;
+  background-color: #111;
+  margin: 3px;
+}
 .red {
-    background-color: beige;
+    background-color: #CF27F5;
     display: flex;
     flex-direction: column;
     border: solid black;
@@ -166,60 +212,9 @@ textarea{
  input, textarea{
         min-width: 250px;
   }
-}
-@media screen and (min-width: 960px) {
-  body {
-    background-color: red;
+  .blue img{
+    min-width: 480px;
   }
- input, textarea{
-        min-width: 400px;
-        font-size: 15px;
-  }
-
-}
-/* test area*/
-nav{
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-color: #fff;
-}
-.nav-links{
-  display: flex;
-align-items: center;
-list-style: none;
-}
-.nav-links a{
-  display: block;
-padding:  10px;
-color: #111;
-text-decoration: none;
-font-size: 10px;
-text-transform: uppercase;
-transition: all ease-in-out 100ms;
-}
-.nav-links a:hover{
-  background-color: #39ffde;
-}
-.nav-links .nav-cta-button{
-  padding:  10px;
-  margin-left: 16px;
-  border: #39ffde solid 2px;
-  border-radius: 15px;
-}
-.nav-links .nav-cta-button:hover{
-  background-color: #39ffde;
-}
-.bacon .bar{
-  flex-basis: 100%;
-  height: 4px;
-  background-color: #111;
-  margin: 3px;
-}
-@media (max-width: 768px){
   nav{
     flex-wrap: wrap;  
   }
@@ -240,7 +235,8 @@ transition: all ease-in-out 100ms;
     font-size: 14px;
   }
   .nav-links a:hover{
-    background-color: #39ffde;
+    display: none;
+
   }
   .nav-links .nav-cta-button{
     padding: 8px;
@@ -251,5 +247,17 @@ transition: all ease-in-out 100ms;
   }
   .nav-links .nav-cta-button:hover{
     background-color: #39ffde;
+  }
+}
+@media screen and (min-width: 960px) {
+  body {
+    background-color: red;
+  }
+ input, textarea{
+        min-width: 400px;
+        font-size: 15px;
+  }
+  .red{
+    min-width: 800px;
   }
 }
