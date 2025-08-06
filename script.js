@@ -39,3 +39,12 @@ bacon.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+if(mediaQuery <= 768){
+  alert('Yay');
+}
+else{
+  alert('Boo');
+}
