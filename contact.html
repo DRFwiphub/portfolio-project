@@ -6,86 +6,80 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
-   <title>Contact</title>
+   <title>Contact me</title>
    <body>
       <div class="container">
-         <div class="red">
-            <div class="blue">
+         <div class="framework">
+            <div class="logo">
                <img src="images/logo.jpeg" alt="My Logo">
             </div>
-            
-               <nav>
-                  <div class="bacon">
-                     <div class="bar"></div>
-                     <div class="bar"></div>
-                     <div class="bar"></div>
+            <nav>
+               <div class="Rnavbar">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+               </div>
+               <ul class="nav-links">
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="gallery.html">gallery</a></li>
+                  <li><a class="nav-cta-button" href="contact.html">contact</a></li>
+               </ul>
+            </nav>
+            <div class="contcontrol">
+               <p>
+                  please contact me via any of these ways:
+               </p>
+               <br>
+               <!--links with images-->
+               <div class="contact">
+               <ol>
+                  <li><a href=>twitter/x</a></li>
+                  <li><a href=>instagram</a></li>
+                  <li><a href=>linkedin</a></li>
+               </ol>
+               <br>
+               <form id="contact-form">
+                  <div>
+                     <label for="name">name</label>
+                     <br>
+                     <input type="text" name="name" autocomplete="off" id="name">
                   </div>
-                  <ul class="nav-links">
-                     <li><a href="index.html">home</a></li>
-                     <li><a href="about.html">about</a></li>
-                     <li><a href="gallery.html">gallery</a></li>
-                     <li><a class="nav-cta-button" href="contact.html">contact</a></li>
-                  </ul>
-               </nav>
-            
-            <div class="magenta">
-            <p>
-               please contact me via any of these ways:
-            </p>
-            <br>
-            <!--links with images-->
-            <ol>
-               <li><a href=>twitter/x</a></li>
-               <li><a href=>instagram</a></li>
-               <li><a href=>linkedin</a></li>
-            </ol>
-            <br>
-            
-            
-            
-            
-               
-                  <form id="contact-form">
-                     <div>
-                        <label for="name">name</label>
-                        <br>
-                        <input type="text" name="name" autocomplete="off" id="name">
-                     </div>
-                     <div>
-                        <label for="email">email</label>
-                        <br>
-                        <input type="text" name="email" autocomplete="off" id="email">
-                     </div>
-                     <div style="display: none; visibility: hidden;">
-                        <input type="text" name="job-role" autocomplete="off">
-                     </div>
-                     <div>
-                        <label for="message">message</label>
-                        <br>
-                        <textarea id="message" name="message"></textarea>
-                     </div>
-                     <div>
-                        <button type="submit">Submit</button>
-                     </div>
-                  </form>
-               </div>
-               <div class="yellow">
-                  <a href="index.html">Home</a>
-                  <a href="gallery.html">gallery</a>
-                  <a href="about.html">about me</a>
-                  <a href="contact.html">contact</a>
-               </div>
+                  <div>
+                     <label for="email">email</label>
+                     <br>
+                     <input type="text" name="email" autocomplete="off" id="email">
+                  </div>
+                  <div style="display: none; visibility: hidden;">
+                     <input type="text" name="job-role" autocomplete="off">
+                  </div>
+                  <div>
+                     <label for="message">message</label>
+                     <br>
+                     <textarea id="message" name="message"></textarea>
+                  </div>
+                  <div>
+                     <button type="submit">Submit</button>
+                  </div>
+               </form>
             </div>
          </div>
-         <div class="modal" id="modal">
-            <div class="modal-content">
-               <button class="close-btn" id="closeBtn">&times;</button>
-               <img id="modalImage" src="" alt="Enlarged Image">
+            <div class="Dnavbar">
+               <a href="index.html">Home</a>
+               <a href="gallery.html">gallery</a>
+               <a href="about.html">about me</a>
+               <a href="contact.html">contact</a>
             </div>
          </div>
       </div>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-      </script>
+      <div class="modal" id="modal">
+         <div class="modal-content">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <img id="modalImage" src="" alt="Enlarged Image">
+         </div>
+      </div>
+      </div>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
       <script src ="script.js"></script>
    </body>
 </html>

@@ -1,3 +1,4 @@
+//pop up gallery
 const images = document.querySelectorAll('.gallery img');
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modalImage');
@@ -23,12 +24,12 @@ modal.addEventListener('click', (e) => {
     modalImg.src = '';
   }
 });
-
-const bacon = document.querySelector('.bacon');
+//responsive navbar
+const navBar = document.querySelector('.Rnavbar');
 const navLinks = document.querySelector('.nav-links');
 let menuOpen = false;
 
-bacon.addEventListener('click', () => {
+navBar.addEventListener('click', () => {
   if(menuOpen == false){
     navLinks.style.display ="block";
     navLinks.style.float = "left";
@@ -39,12 +40,12 @@ bacon.addEventListener('click', () => {
     menuOpen = false;
   }
 });
-
-const mediaQuery = window.matchMedia('(min-width: 768px)')
-
-if(mediaQuery <= 768){
-  alert('Yay');
-}
-else{
-  alert('Boo');
-}
+//solution for navbar issue
+window.addEventListener('resize', function() {
+    const navLinks = document.querySelector('.nav-links');
+    if (window.innerWidth > 768) {
+        navLinks.style.display = 'flex';
+    } else {
+        navLinks.style.display = ''; 
+    }
+});
