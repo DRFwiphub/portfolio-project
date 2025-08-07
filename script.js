@@ -24,11 +24,11 @@ modal.addEventListener('click', (e) => {
   }
 });
 
-const bacon = document.querySelector('.bacon');
+const Navbar = document.querySelector('.rNavbar');
 const navLinks = document.querySelector('.nav-links');
 let menuOpen = false;
 
-bacon.addEventListener('click', () => {
+Navbar.addEventListener('click', () => {
   if(menuOpen == false){
     navLinks.style.display ="block";
     navLinks.style.float = "left";
@@ -48,3 +48,12 @@ if(mediaQuery <= 768){
 else{
   alert('Boo');
 }
+
+window.addEventListener('resize', function() {
+    const navLinks = document.querySelector('.nav-links');
+    if (window.innerWidth > 768) {
+        navLinks.style.display = 'flex'; // Show nav links on desktop
+    } else {
+        navLinks.style.display = ''; // Let your mobile JS handle this
+    }
+});

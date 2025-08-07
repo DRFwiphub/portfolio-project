@@ -4,6 +4,7 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-wrap: wrap;
 }
 h1 {
     font-size: 4 rem;
@@ -12,6 +13,7 @@ p{
   padding: 0 5px;
 }
 ol{
+  justify-content: center;
   padding-top: 1%;
   position: centre;
 }
@@ -25,16 +27,16 @@ ol li{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch; /* change from center to stretch */
     text-align: center;
 }
-.blue {
+.logo {
     background-color: blue;
 }
-.blue img{
+.logo img{
   max-width: 360px;
 }
-.yellow {
+.Dnavbar {
     border-top: solid black;
     border-bottom: solid black;
     background-color: #E35AE8;
@@ -76,26 +78,41 @@ transition: all ease-in-out 100ms;
 .nav-links .nav-cta-button:hover{
   background-color: #39ffde;
 }
-.bacon .bar{
+.rNavbar .bar{
   flex-basis: 100%;
   height: 4px;
   background-color: #111;
   margin: 3px;
 }
-.red {
+.frame {
     background-color: #CF27F5;
     display: flex;
     flex-direction: column;
     border: solid black;
     border-bottom: none;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto; /* allow it to grow and fill parent */
 }
-.cat{
-  position: fixed;
-  float: left;
-  max-width: 15%;
+.profile-picture{
+display: flex;
+    flex-wrap: wrap;
+    position: left;
+ 
   max-height: 20%;
+  float: left;
+    margin: 0 16px 16px 0;
+    max-width: 200px;
+    width: 40%;
 }
-.magenta{
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+.contentcontrol{
+  overflow: auto;
     display: flex;
     flex-wrap: wrap;
     position: center;
@@ -233,7 +250,7 @@ textarea{
   nav{
     flex-wrap: wrap;  
   }
-  .bacon{
+  .rNavbar{
     display: flex;
     flex-wrap: wrap;
   }
