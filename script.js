@@ -1,29 +1,37 @@
 //pop up gallery
 const images = document.querySelectorAll('.gallery img');
-const modal = document.getElementById('modal');
+const modalCont = document.getElementById('modal-container');
 const modalImg = document.getElementById('modalImage');
 const closeBtn = document.getElementById('closeBtn');
 
-images.forEach(img => {
-  img.addEventListener('click', () => {
-    modal.classList.add('open');
-    modalImg.src = img.src.replace('/300/200', '/800/600');
-    modalImg.alt = img.alt;
+//creates the .open(~line 170::220) class in CSS, expands image on click
+//came up with the idea of making it an if statement, initially i thought it just had to be over 1 part
+//then added the rest
+if (modalCont && modalImg && closeBtn) {
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      modalCont.classList.add('open');
+      modalImg.src = img.src.replace('/300/200', '/800/600');
+      modalImg.alt = img.alt;
+    });
   });
-});
-//close
-
-closeBtn.onclick = () => {
-  modal.classList.remove('open');
-  modalImg.src = '';
-};
-
-modal.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    modal.classList.remove('open');
+//close on click
+  closeBtn.onclick = () => {
+    modalCont.classList.remove('open');
     modalImg.src = '';
-  }
-});
+  };
+//close on esc
+  modalCont.addEventListener('click', (e) => {
+    if (e.target === modalCont) {
+      modalCont.classList.remove('open');
+      modalImg.src = '';
+    }
+  });
+}
+
+
+
+
 //responsive navbar
 const navBar = document.querySelector('.Rnavbar');
 const navLinks = document.querySelector('.nav-links');
