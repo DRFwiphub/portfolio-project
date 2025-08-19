@@ -255,6 +255,9 @@ textarea{
   body {
     background-color: orange;
   }
+  .contcontrol{
+    min-height: 70vh;
+  }
   .gallery{
     flex-direction: row;
     justify-content: space-evenly;
@@ -286,18 +289,17 @@ textarea{
     text-align: center;
     font-size: 14px;
   }
-  .nav-links a:hover{
+  .nav-links {
     display: none;
-
   }
   .nav-links .nav-cta-button{
-    padding: 8px;
+    padding: 6px;
     margin-left: 0;
     border: none;
     border-radius: 0;
     margin-bottom: 10px;
   }
-  .nav-links .nav-cta-button:hover{
+  .nav-links {
     background-color: #39ffde;
   }
 }
