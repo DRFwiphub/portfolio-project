@@ -7,11 +7,19 @@ The initial Intent is for the user to access the page, find out about me, be abl
 # Functionalities 
 
 Responsive navigation bar popup gallery compatability with mobile devices.
-
+![Homepage with Responsive Navbar](images/MVHP.jpg)
 The responisive navigation bar was designed with mobile devices in mind, allowing for navigation at a click while providing a betteer user experience. this is compatible with android, iOS and PC.
 
+![Responsive Navbar](images/RNav.jpg)
+
 The pop up gallery is designed with an onclick method that allows the user to expand the images and close  them via the 'X' on the top right corner. this works on both mobile and desktop.
+
+![Gallery](images/GPN.jpg)
+
 ![PopUp](images/GPOC.jpg)
+
+
+
 # Technologies 
 HTML - the base of the website.
 CSS - adding layout and styles to the site.
@@ -25,6 +33,14 @@ Git - the version control method.
 
 This webite was designed with mobile devices in mind.
 
+# Notes
+
+The HTML validator(https://validator.w3.org/) found the errors with three placeholder links on the about me page. It also did not like the blanck src=" " on my modal on the gallery page.
+the CSS Validator(https://jigsaw.w3.org/) found no issues.
 # Sources/Resources 
 
-Code Academy, Stack Overflow, and my Mentor Nathan.
+Code Academy, Stack Overflow, W3Schools and my Mentor Nathan.
+The Images used were sourced from https://unsplash.com/
+The logo was made using https://www.design.com/
+JShint for javascript testing, 
+html formatted with https://www.freeformatter.com/

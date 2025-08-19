@@ -5,8 +5,7 @@ const modalImg = document.getElementById('modalImage');
 const closeBtn = document.getElementById('closeBtn');
 
 //creates the .open(~line 170::220) class in CSS, expands image on click
-//came up with the idea of making it an if statement, initially i thought it just had to be over 1 part
-//then added the rest
+
 if (modalCont && modalImg && closeBtn) {
   images.forEach(img => {
     img.addEventListener('click', () => {
