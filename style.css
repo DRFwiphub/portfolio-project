@@ -52,7 +52,7 @@ nav{
   padding: 0;
 }
 .framework {
-  background-color: #82acff;;
+  background-color: #82acff;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -324,3 +324,4 @@ textarea{
     min-width: 800px;
   }
 }
+
