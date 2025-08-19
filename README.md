@@ -11,7 +11,7 @@ Responsive navigation bar popup gallery compatability with mobile devices.
 The responisive navigation bar was designed with mobile devices in mind, allowing for navigation at a click while providing a betteer user experience. this is compatible with android, iOS and PC.
 
 The pop up gallery is designed with an onclick method that allows the user to expand the images and close  them via the 'X' on the top right corner. this works on both mobile and desktop.
-
+![PopUp](images/GPOC.jpg)
 # Technologies 
 HTML - the base of the website.
 CSS - adding layout and styles to the site.

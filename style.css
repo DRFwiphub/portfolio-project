@@ -83,6 +83,16 @@ nav{
 .Dnavbar {
   background-color: #3994d6;;
 }
+.Dnavbar a{
+  font-size: 8px;
+  padding: 1px 10px;
+}
+.Dnavbar a:link{
+  color: #000;
+}
+.Dnavbar a:visited{
+  color: blueviolet;
+}
 .gallery {
   display: flex;
   flex-direction: column;
@@ -96,11 +106,11 @@ nav{
   min-width: 120px;
 }
 .contact{
-display: flex;
-flex-direction: column;
-align-items: center;   
-justify-content: center; 
-text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center; 
+  text-align: center; 
 }
 /*responsive nave bar */
   .nav-links{
@@ -256,7 +266,6 @@ textarea{
   body {
     background-color: orange;
   }
-
   .gallery{
     flex-direction: row;
     justify-content: space-evenly;
@@ -267,6 +276,9 @@ textarea{
   .blue img{
     min-width: 480px;
   }
+  .Dnavbar a{
+    font-size: 12px;
+}
 }
 @media screen and (max-width: 768px) {
   nav{
