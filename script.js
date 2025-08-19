@@ -20,7 +20,7 @@ if (modalCont && modalImg && closeBtn) {
     modalCont.classList.remove('open');
     modalImg.src = '';
   };
-//close on esc
+
   modalCont.addEventListener('click', (e) => {
     if (e.target === modalCont) {
       modalCont.classList.remove('open');
