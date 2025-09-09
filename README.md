@@ -33,6 +33,10 @@ Git - the version control method.
 
 This webite was designed with mobile devices in mind.
 
+I used Lighthouse to test accessibility. See the below screenshot for the full report.
+
+![Accessibility](images/access.jpg)
+
 # Notes
 
 The HTML validator(https://validator.w3.org/) found the errors with three placeholder links on the about me page. It also did not like the blanck src=" " on my modal on the gallery page.
