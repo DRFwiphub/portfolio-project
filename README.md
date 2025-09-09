@@ -7,7 +7,9 @@ The initial Intent is for the user to access the page, find out about me, be abl
 # Functionalities 
 
 Responsive navigation bar popup gallery compatability with mobile devices.
+
 ![Homepage with Responsive Navbar](images/MVHP.jpg)
+
 The responisive navigation bar was designed with mobile devices in mind, allowing for navigation at a click while providing a betteer user experience. this is compatible with android, iOS and PC.
 
 ![Responsive Navbar](images/RNav.jpg)
@@ -17,8 +19,6 @@ The pop up gallery is designed with an onclick method that allows the user to ex
 ![Gallery](images/GPN.jpg)
 
 ![PopUp](images/GPOC.jpg)
-
-
 
 # Technologies 
 HTML - the base of the website.

@@ -19,7 +19,6 @@ if (modalCont && modalImg && closeBtn) {
     modalCont.classList.remove('open');
     modalImg.src = '';
   };
-
   modalCont.addEventListener('click', (e) => {
     if (e.target === modalCont) {
       modalCont.classList.remove('open');
@@ -27,9 +26,6 @@ if (modalCont && modalImg && closeBtn) {
     }
   });
 }
-
-
-
 
 //responsive navbar
 const navBar = document.querySelector('.Rnavbar');
